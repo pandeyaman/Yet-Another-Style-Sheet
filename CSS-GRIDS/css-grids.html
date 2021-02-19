@@ -1,10 +1,184 @@
 <html>
-    <head>
-        <title>CSS Grids</title>
-    </head>
 
-    <body>
-        
+<head>
+    <title>CSS Grids</title>
+    <link rel="stylesheet" href="/CSS-GRIDS/css-grids.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
 
-    </body>
+<body>
+    <main>
+        <h2>CSS Grid Practice</h2>
+        <hr>
+        <h3>Grids Elements</h3>
+        <p>
+            A grid element consist of a parent element with one or multiple child elements.
+            The <code>display</code> property should be set as grid to make the container as a grid container.
+            <pre>
+            <code>
+                {
+                    display: grid | inline-grid;
+                }
+                </code>
+           </pre>
+            <p>All direct children of the grid container automatically become grid items.</p>
+        </p>
+        <br>
+        <h2>Examples of a Grid</h2>
+        <hr>
+        <h3>1. Grid with 3 columns and 2 rows</h3>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+        <br><br>
+        <h3>Spanning Grid to multiple columns and rows</h3>
+        <div class="text">
+            <p>
+                A grid container contains grid items. <br>
+                Genrally, the grid container containes one item per grid, such as one item per row and column. But by
+                using
+                <code>grid-column | grid-row</code> property we can specify the number of rows and columns the grid
+                should span over.
+
+            </p>
+            <hr class="special-hr">
+            <h5>&#8226; The <code>'grid-column'</code> property</h5>
+            <div class="inner-text">
+                <p>
+                    The grid-column property defines on which columns to place an item. <br>
+                    It takes two values: from which line to start the item-grid and on which line to end.
+                </p>
+                <pre>
+                   <code>
+                .item1
+                       {
+                          grid-column: 1/5;
+                       }
+                   </code>
+               </pre>
+                <p>
+                    This will start the grid item from 1st columne line and end it at 5th column line, spanning the
+                    item-grid to 4 columns
+                </p>
+            </div>
+            <hr class="special-hr">
+
+            <h5>&#8226; The <code>'grid-row'</code> property</h5>
+            <div class="inner-text">
+                <p>
+                    The grid-row property defines on which rows to place an item. <br>
+                    It takes two values: from which line to start the item-grid and on which line to end.
+                </p>
+                <pre>
+                   <code>
+                .item1
+                       {
+                          grid-row: 2/4;
+                       }
+                   </code>
+               </pre>
+                <p>
+                    This will start the grid item from 2nd row line and end it at 4th row line, spanning the
+                    item-grid to 2 rows.
+                </p>
+            </div>
+
+        </div>
+        <hr class="special-hr">
+
+        <h3>2. Example of grid-column</h3>
+        <p>
+            The first column spans over 3 items by using the <code> { grid-column: 1/4 } </code> property.
+        </p>
+        <div class="grid-container-2">
+            <div class="grid-item grid-col">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+        </div>
+        <hr class="special-hr">
+        <h3>3. Example of row-column</h3>
+        <p>
+            The third row spans over 2 items by using the <code> { grid-row: 2/4 } </code> property.
+        </p>
+        <div class="grid-container-3">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item grid-r">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+            <div class="grid-item">10</div>
+            <div class="grid-item">11</div>
+        </div>
+        <hr class="special-hr">
+
+        <h5>&#8226; The <code>'grid-area'</code> property</h5>
+        <div class="inner-text">
+            <p>
+                The grid-area property is used as a short-hand notation for combining <code>grid-column</code> and
+                <code>grid-row</code> </p>
+            <pre>
+                   <code>
+                .item1
+                {
+                    grid-area: 1/2/3/4;
+                }
+                   </code>
+               </pre>
+            <p>
+                This will start the item from row-line-1 and column-line-2 and end the item at row-line-3 and
+                column-line-4.
+            </p>
+        </div>
+        <hr class="special-hr">
+        <h3>3. Example of grid-area</h3>
+        <p>
+            The third row spans over 2 items by using the <code> { grid-row: 2/4 } </code> property.
+        </p>
+        <div class="grid-container-4">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item grid-area">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+            <div class="grid-item">10</div>
+            <div class="grid-item">12</div>
+            <div class="grid-item">13</div>
+            <div class="grid-item">14</div>
+        </div>
+        <hr class="special-hr">
+        <h2>Putting everything together</h2>
+        <hr>
+        <h3>Let's create a website layout using what we have learnt, using Grids so far.</h3>
+        <div class="grid-container-5">
+            <div class="grid-item grid-col-header">1</div>
+            <div class="grid-item grid-row-menu">2</div>
+            <div class="grid-item grid-area-main">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item grid-col-footer">6</div>
+        </div>
+    </main>
+
+</body>
+
 </html>

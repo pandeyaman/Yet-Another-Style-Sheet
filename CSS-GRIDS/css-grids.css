@@ -47,6 +47,14 @@ code{
     font-size: 150%;
 }
 
+.grid-item-website{
+    padding: 30px;
+    border: 1px #fb743e solid;
+    margin: 10px;
+    text-align: center;
+    font-size: 150%;
+}
+
 .grid-container-2{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -118,4 +126,42 @@ pre{
 
 code{
     width: 100%;
+}
+
+
+.background-head{
+    background-image: url(/CSS-GRIDS/images/space-background.png);
+    background-size: cover;
+}
+
+.logo{
+    width: 200px;
+    float: left;
+}
+
+.list{
+    float: right;
+    width: 400px;
+    margin-top: -20px;
+    margin-right: -20px;
+}
+
+.menu{
+    width: 180px;
+    float: left;
+}
+
+.main-text{
+    font-size: 80%;
+    text-align: justify;
+    color: #fc511d;
+}
+
+.gamepad{
+    width: 40px;
+    
+}
+
+.footer{
+    width: 300px;
 }

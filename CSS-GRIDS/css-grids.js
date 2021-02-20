@@ -43,7 +43,7 @@ function makeWebsite() {
         <img src="/CSS-GRIDS/images/gamepad2.png" alt="" class="gamepad">
     </div>
     <div class="grid-item-website grid-col-footer">
-        <img src="/CSS-GRIDS/images/footer.png" alt="" class="footer">
+        <img src="/CSS-GRIDS/images/footer1.png" alt="" class="footer">
     </div>
 </div>  `;
 

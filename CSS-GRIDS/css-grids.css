@@ -128,9 +128,27 @@ code{
     width: 100%;
 }
 
+.btn{
+    padding: 10px 20px;
+    color: #FF3D00;
+    background-color: transparent;
+    font-size: 80%;
+    letter-spacing: 3px;
+    font-weight: 300;
+    border: 2px solid #FF3D00;
+    border-radius: 220px;
+    transition: 0.3s;
+    margin: 0px auto;
+    outline: none;
+}
+
+.btn:hover{
+    color: white;
+    background-color: #ff3c00d2;
+}
 
 .background-head{
-    background-image: url(/CSS-GRIDS/images/space-background.png);
+    background-image: url(/CSS-GRIDS/images/space-bg.PNG);
     background-size: cover;
 }
 
@@ -152,16 +170,15 @@ code{
 }
 
 .main-text{
-    font-size: 80%;
+    font-size: 65%;
     text-align: justify;
     color: #fc511d;
 }
 
 .gamepad{
     width: 40px;
-    
 }
 
 .footer{
-    width: 300px;
+    width: 200px;
 }

@@ -14,7 +14,6 @@ function changeLayout() {
 }
 
 function makeWebsite() {
-    //alert("WELL WELL WELL");
     var currentNode = document.querySelector('#website-outer');
     var newNode = document.createElement("div");
 

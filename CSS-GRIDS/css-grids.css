@@ -75,6 +75,48 @@ code{
     grid-template-columns: auto auto auto auto auto;
 }
 
+.grid-container-6{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    border: 1px solid #FF3D00;
+}
+
+.grid-container-7{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    border: 1px solid #FF3D00;
+}
+
+.grid-container-8{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    border: 1px solid #FF3D00;
+}
+
+.grid-container-9{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    border: 1px solid #FF3D00;
+}
+
+.grid-container-10{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: start;
+    border: 1px solid #FF3D00;
+}
+
+.grid-container-11{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: end;
+    border: 1px solid #FF3D00;
+}
+
 .grid-col{
     grid-column: 1/4;
 }

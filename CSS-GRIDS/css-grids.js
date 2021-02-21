@@ -1,6 +1,6 @@
 document.querySelector(".btn").addEventListener("click", changeLayout);
-var isWebiste = false;
 
+var isWebiste = false;
 function changeLayout() {
     if (isWebiste) {
         console.log("make it website");
@@ -16,9 +16,7 @@ function changeLayout() {
 function makeWebsite() {
     var currentNode = document.querySelector('#website-outer');
     var newNode = document.createElement("div");
-
     newNode.id = "website-layout"
-
     newNode.innerHTML = `
     <div class="grid-container-5 background-head" id="#web-outer">
     <div class="grid-item-website grid-col-header">
@@ -45,7 +43,6 @@ function makeWebsite() {
         <img src="/CSS-GRIDS/images/footer1.png" alt="" class="footer">
     </div>
 </div>  `;
-
     currentNode.parentNode.replaceChild(newNode, currentNode);
 }
 
@@ -69,4 +66,10 @@ function makeLayout() {
     </div>`;
 
     currentNode.parentNode.replaceChild(newNode, currentNode);
+}
+
+document.querySelector(".btn-space-evenly").addEventListener("click", changeJustifyProperty);
+
+function changeJustifyProperty(){
+    
 }

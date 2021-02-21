@@ -68,8 +68,63 @@ function makeLayout() {
     currentNode.parentNode.replaceChild(newNode, currentNode);
 }
 
-document.querySelector(".btn-space-evenly").addEventListener("click", changeJustifyProperty);
+document.querySelector(".btn-space-evenly").addEventListener("click", function(){
+    document.getElementById("container-justify").setAttribute("style", "justify-content:space-evenly");
+});
 
-function changeJustifyProperty(){
-    
-}
+document.querySelector(".btn-space-around").addEventListener("click", function(){
+    document.getElementById("container-justify").setAttribute("style", "justify-content:space-around");
+});
+
+document.querySelector(".btn-space-between").addEventListener("click", function(){
+    document.getElementById("container-justify").setAttribute("style", "justify-content:space-between");
+});
+
+document.querySelector(".btn-center").addEventListener("click", function(){
+    document.getElementById("container-justify").setAttribute("style", "justify-content:center");
+});
+
+document.querySelector(".btn-start").addEventListener("click", function(){
+    document.getElementById("container-justify").setAttribute("style", "justify-content:start");
+});
+
+document.querySelector(".btn-end").addEventListener("click", function(){
+    document.getElementById("container-justify").setAttribute("style", "justify-content:end");
+});
+
+document.querySelector(".btn-reset-justify").addEventListener("click", function(){
+    document.getElementById("container-justify").setAttribute("style", "justify-content:''");
+});
+
+
+
+
+
+
+document.querySelector(".btn-space-evenly-align").addEventListener("click", function(){
+    document.getElementById("container-align").setAttribute("style", "align-content:space-evenly");
+});
+
+document.querySelector(".btn-space-around-align").addEventListener("click", function(){
+    document.getElementById("container-align").setAttribute("style", "align-content:space-around");
+});
+
+document.querySelector(".btn-space-between-align").addEventListener("click", function(){
+    document.getElementById("container-align").setAttribute("style", "align-content:space-between");
+});
+
+document.querySelector(".btn-center-align").addEventListener("click", function(){
+    document.getElementById("container-align").setAttribute("style", "align-content:center");
+});
+
+document.querySelector(".btn-start-align").addEventListener("click", function(){
+    document.getElementById("container-align").setAttribute("style", "align-content:start");
+});
+
+document.querySelector(".btn-end-align").addEventListener("click", function(){
+    document.getElementById("container-align").setAttribute("style", "align-content:end");
+});
+
+document.querySelector(".btn-reset-align").addEventListener("click", function(){
+    document.getElementById("container-align").setAttribute("style", "align-content:''");
+});

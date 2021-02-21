@@ -88,32 +88,8 @@ code {
     display: grid;
     grid-template-columns: auto auto auto;
     border: 1px solid #FF3D00;
-    padding: 40px 40px;
-    height: 50%;
-}
-
-.justify-space-evenly{
-    justify-content: space-evenly;
-}
-
-.justify-space-around{
-    justify-content: space-around;
-}
-
-.justify-space-between{
-    justify-content: space-between;
-}
-
-.justify-center{
-    justify-content: center;
-}
-
-.justify-start{
-    justify-content: start;
-}
-
-.justify-end{
-    justify-content: end;
+    padding: 20px 20px;
+    height: 40%;
 }
 
 .grid-container-6 {
@@ -203,6 +179,15 @@ code {
     margin: 80px auto;
 }
 
+.footer-hr {
+    width: 100%;
+    border: 0;
+    height: 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 50px auto;
+}
+
 pre {
     width: 100%;
 }
@@ -223,6 +208,7 @@ code {
     transition: 0.3s;
     margin: 0px auto;
     outline: none;
+    
 }
 
 .btn:hover {
@@ -310,4 +296,15 @@ code {
 
 .footer {
     width: 60%;
+}
+
+
+.github-link{
+    font-size: 120%;
+    text-decoration: none;
+    color:#FF3D00;
+}
+
+.footer-text{
+    font-size: 110%;
 }

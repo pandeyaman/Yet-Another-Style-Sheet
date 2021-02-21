@@ -92,10 +92,6 @@ code {
     height: 50%;
 }
 
-.grid-container-align div {
-    margin: 0 2%;
-}
-
 .justify-space-evenly{
     justify-content: space-evenly;
 }

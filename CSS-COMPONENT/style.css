@@ -18,6 +18,7 @@ hr{
 
 .navbar{
     background-color: #2c2c54;
+    border-radius: 20px;
 }
 
 header h3{
@@ -27,18 +28,19 @@ header h3{
 }
 
 .brand{
-    font-size: 42px;
+    font-size: 50px;
     font-weight: 300;
     padding: 10px 20px;
+    width: 63%;
 }
 
 .brand::first-letter{
-    font-weight: 700;
-    font-size: 32px;
+    font-weight: 900;
+    font-size: 42px;
 }
 
 header ul{
-    float: right;
+    display: inline;
     vertical-align: middle;
 }
 
@@ -52,7 +54,11 @@ header a{
     font-size: 120%;
     font-weight: 300;
     margin: 0 20px;
-    padding: 0 20px;
+    padding: 5px 20px;
+}
+
+header a:hover{
+    border-bottom: 1px solid wheat;
 }
 
 .active{
@@ -67,6 +73,7 @@ header a{
     transition: 0.3s;
     color:#2c2c54;
     background-color: wheat;
+    font-weight: 500;
 }
 
 .sign-up:hover{
